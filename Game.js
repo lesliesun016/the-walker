@@ -202,7 +202,7 @@ class Game extends Phaser.Scene {
       this.walker.x >= this.background.displayWidth &&
       this.taintedCave.visible
     ) {
-      this.scene.start("End");
+      this.scene.start("Game");
     }
   }
 }

@@ -20,7 +20,7 @@ const config = {
       debug: false,
     },
   },
-  scene: [Start, Game, Cave, End],
+  scene: [Game, Cave, End],
 };
 
 const game = new Phaser.Game(config);

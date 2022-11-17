@@ -191,6 +191,15 @@ class Cave extends Phaser.Scene {
         this.turnBlack.anims.play("turnBlack", false);
       } else if (!this.turnBlack.anims.isPlaying) {
         this.scene.switch("Game");
+        // reset
+        this.drinkWalker.visible = false;
+        this.turnBlack.visible = false;
+        this.caveWalker.visible = true;
+        this.drinkButton.visible = true;
+        this.caveWalker.x = 540;
+        this.caveWalker.y = 50;
+        this.rt.clear();
+        this.cameras.main.fadeIn(3000);
       }
     }
   }
