@@ -36,7 +36,7 @@ class Game extends Phaser.Scene {
 
     this.background = this.add.image(960, 240, "background");
     this.taintedCave = this.add
-      .image(1350, 260, "taintedCave")
+      .image(1300, 190, "taintedCave")
       .setVisible(false);
 
     this.walkSound = this.sound.add("walkSound");
